@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <h1>Goodbye</h1>
+    <ul>
+      <li id="highlight">List Item 1</li>
+      <li class="bolded">List Item 2</li>
+      <li class="bolded">List Item 3</li>
+    </ul>
+<h1>-----------------------------------------------------------------</h1>
+
+  <h3>DOM selectors exercise:</h3>
+  <ol>
+    <li>give at least 4 different ways you can select the first p tag</li>
+    </ol>
+  <code>
+    <h1>h1> I am an h1! /h1></h1>
+    <p id="first" class="special">p id="first" class="special> Hello /p> </p>
+    <p class="special">p class="special"> Goodbye /p></p>
+    <p>p> Hi Again p></p>
+    <p id="last">p id="last"> Goodbye Again /p></p>
+    </code>
+    <br />
+    <h3>Scroll down for answer</h3>
+    <a href="DOM.html"><h2>DOM Manipulation</h2></a>
+    <a href="home.html"><h1>HOME</h1></a>
+    <p>
+      //dom selectors exercise solutions<br />
+      <br />
+      var p = document.getElementsByTagName("p");<br />
+      <br />
+      var p = document.getElementById("first");<br />
+      <br />
+      var p = document.getElementByClassName("special")[0];<br />
+      <br />
+      var p = document.querySelector("#first");<br />
+      <br />
+      var p = document.querySelectorAll("#first")[0];<br />
+      <br />
+      var p = document.querySelector(".special");<br />
+      <br />
+      var p = document.querySelectorAll(".special")[0];<br />
+      <br />
+      var p = document.querySelector("p");<br />
+      <br />
+      var p = document.querySelectorAll("p")[0];<br />
+      <br />
+      //select the p directly after the h1 - more complex css selector:<br />
+      <br />
+      var p = document.querySelector("h1 + p");
+      </p>
+
+  <script src="domselectors.js"></script>
+  </body>
+</html>

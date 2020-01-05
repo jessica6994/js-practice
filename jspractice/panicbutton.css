@@ -1,0 +1,10 @@
+.body{
+  background-color: #889140;
+}
+.redbody{
+  background-color: red;
+}
+.jumbotron{
+  color: white;
+  background-color: #4f5424 !important;
+}
